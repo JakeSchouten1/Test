@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+	    <meta charset="utf-8">
+
+        <!-- we can use css to make the webpage look good in the future -->
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
+        <title>Password Generator</title>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <!-- a banner at the top of the page -->
+            <div id = "banner">
+                <h1 id="top">Password Generator</h1>
+                <p>A handy tool for an easy-to-remember password</p>
+            </div>
+            
+            <p>
+                <!-- an input to display the password in -->
+                <div id = "passworddisplay">
+                    <label for="passwordinput">Your New Password:</label>
+                    <input id="passwordinput">
+                </div>
+            </p>
+
+            <div id = "passwordbutton">
+                <!-- a button to generate the password -->
+                <button id = "generatePasswordButton">Generate Password</button>
+            </div>
+        </div>
+
+        <!-- connect javascript here -->
+        <script src="function.js"></script>
+    </body>
+</html>
