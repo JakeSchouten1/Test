@@ -32,14 +32,16 @@ function generatePassword(wordBank, numWords) {
     let randIndex = Math.floor(Math.random() * wordBank.length);
     let randWord = wordBank[randIndex];
 
+    
+
+    password += randWord;
+      
     if (i == 0 && document.getElementById("capitalLetter").checked)
     {
         // Capitalize the first letter of the word
-        randWord = randWord.charAt(0).toUpperCase() + randWord.slice(1);
+        password = password.charAt(0).toUpperCase() + password.slice(1);
     }
-
-    password += randWord;
-
+      
     if (i < numWords - 1) {
       password += ''; // In case if we want to add space between words
     }
